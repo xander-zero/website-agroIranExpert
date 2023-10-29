@@ -24,7 +24,7 @@ export default async function Home() {
         <div className="col-span-3 bg-primary">
           <FilterSection />
         </div>
-        <div className="flex flex-col col-span-9 w-full bg-secondary">
+        <div className="flex flex-col col-span-9 w-full p-4">
           <div>
             <div>Experts Symbol</div>
             <div>Sort Base on</div>

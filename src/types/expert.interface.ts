@@ -1,3 +1,4 @@
+
 export interface ExpertsCountGroupByProvince {
   count: number;
   province: string;
@@ -187,6 +188,8 @@ type WorkplaceOrganizationType = {
   positionsIds: number[];
 };
 
+export type TExperyKey = '1' | '2' | '3' | '4' | '5' | '6' | '7' 
+
 export interface Expert {
   uid: string;
   zone: string;
@@ -203,6 +206,7 @@ export interface Expert {
   symbol: SymbolType;
   aboutMe: null | string;
   symbolId: number;
+  symbolUrl:string,
   username: string;
   lastName: string;
   province: string;
@@ -221,12 +225,12 @@ export interface Expert {
   academicRankId: null | string;
   academicDegree: AcademicDegree;
   professionsIds: number[];
-  activityFields: AcademicFields;
+  activityFields: AcademicFields[];
   researchGateURL: null | string;
   academicFieldId: number;
   otherExpertises: null | string;
   consultingFields: ConsultingField[];
-  academicDegreeId: number;
+  academicDegreeId: TExperyKey;
   otherProfessions: null | string;
   googleScholarURL: null | string;
   activityFieldsIds: number[];
