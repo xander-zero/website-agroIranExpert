@@ -123,7 +123,7 @@ export interface ExpertFields {
   ACADEMIC_DEGREE: AcademicDegree;
   ACADEMIC_FIELDS: AcademicFields;
   ACADEMIC_RANKS: AcademicRanks;
-  EXECUTIVE_SKILLS: ExecutiveSkills;
+  EXECUTIVE_SKILLS: ExecutiveSkills[];
   EXPERTISES: Expertieses;
   EXPERTS_BADGES: ExpertsBadges;
   EXPERTS_SORTS: ExpertsSorts;

@@ -6,7 +6,7 @@ import FilterItems from "./FilterItems/filterItems";
 async function getExpertFields(): Promise<ExpertFields> {
   const res = await fetch(`${process.env.API_BASE_URL}/statics/experts-fields`);
   const response = await res.json();
-  const result = await response?.result?.data;
+  const result = await response?.result?.data?.expertsFields;
   return result;
 }
 

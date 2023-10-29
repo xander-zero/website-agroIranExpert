@@ -21,7 +21,7 @@ export default async function Home() {
     <>
       <HomeHeroSection />
       <div className="h-[100vh] grid grid-cols-12">
-        <div className="col-span-3 bg-primary">
+        <div className="col-span-3">
           <FilterSection />
         </div>
         <div className="flex flex-col col-span-9 w-full p-4">

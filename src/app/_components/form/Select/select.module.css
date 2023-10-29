@@ -1,18 +1,18 @@
 .container {
     position: relative;
-    width: 20em;
+    width: 100%;
     min-height: 1.5em;
-    border: .05em solid #777;
+    border: .05em solid #E7EDF3;
     display: flex;
     align-items: center;
     gap: .5em;
-    padding: .5em;
+    padding: .4em;
     border-radius: .25em;
     outline: none;
   }
   
   .container:focus {
-    border-color: hsl(200, 100%, 50%);
+    border-color: #E7EDF3;
   }
   
   .value {
@@ -20,6 +20,7 @@
     display: flex;
     gap: .5em;
     flex-wrap: wrap;
+    font-size: 12px;
   }
   
   .clear-btn {
@@ -57,13 +58,14 @@
     display: none;
     max-height: 15em;
     overflow-y: auto;
-    border: .05em solid #777;
+    border: .05em solid #E7EDF3;
     border-radius: .25em;
     width: 100%;
     left: 0;
     top: calc(100% + .25em);
     background-color: white;
     z-index: 100;
+    font-size: 12px;
   }
   
   .options.show {
@@ -71,17 +73,16 @@
   }
   
   .option {
-    padding: .25em .5em;
+    padding: 10px .5em;
     cursor: pointer;
   }
   
   .option.selected {
-    background-color: hsl(200, 100%, 70%);
+    background-color: hsl(0, 0%, 69%);
   }
   
   .option.highlighted {
-    background-color: hsl(200, 100%, 50%);
-    color: white
+    background-color: #E7EDF3;
   }
   
   .option-badge {
