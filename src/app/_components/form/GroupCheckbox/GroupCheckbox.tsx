@@ -23,13 +23,14 @@ const GroupCheckbox: React.FC<GroupCheckboxProps> = ({
           <input
             id={value.id.toString()}
             type="checkbox"
+            name={value.name}
             value={value.id}
             checked={isSelected(value.id.toString())}
             onChange={onChange}
           />
           <label
             htmlFor={value.id.toString()}
-            className="text-[12px] text-base-25 cursor-pointer"
+            className="text-[14px] text-base-25 cursor-pointer"
           >
             {value.name}
           </label>

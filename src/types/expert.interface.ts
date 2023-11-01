@@ -120,16 +120,16 @@ export interface WorkplaceOrganizationPosition {
 }
 
 export interface ExpertFields {
-  ACADEMIC_DEGREE: AcademicDegree;
-  ACADEMIC_FIELDS: AcademicFields;
-  ACADEMIC_RANKS: AcademicRanks;
+  ACADEMIC_DEGREE: AcademicDegree[];
+  ACADEMIC_FIELDS: AcademicFields[];
+  ACADEMIC_RANKS: AcademicRanks[];
   EXECUTIVE_SKILLS: ExecutiveSkills[];
-  EXPERTISES: Expertieses;
+  EXPERTISES: Expertieses[];
   EXPERTS_BADGES: ExpertsBadges;
   EXPERTS_SORTS: ExpertsSorts;
   EXPERTS_SURVEY_OPTIONS: ExpertsSurveyOptions;
   EXPERTS_SYMBOLS: ExpertsSymbols;
-  PROFESSIONS: Professions;
+  PROFESSIONS: Professions[];
   WORKPLACE_ORGANIZATIONS: WorkplaceOrganization;
   WORKPLACE_ORGANIZATIONS_POSITIONS: WorkplaceOrganizationPosition;
 }
