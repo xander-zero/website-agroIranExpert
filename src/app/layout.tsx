@@ -56,6 +56,7 @@ export default function RootLayout({
     <html dir="rtl" className={`dark ${figtree.variable} ${iransans.variable}`}>
       <body className="min-h-screen grid grid-rows-[80px_1fr_auto]  bg-base-content">
         <Header />
+
         <main>{children}</main>
         {/* <Footer /> */}
       </body>

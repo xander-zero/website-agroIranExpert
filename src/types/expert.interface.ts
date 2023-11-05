@@ -210,6 +210,11 @@ export interface Expert {
   username: string;
   lastName: string;
   province: string;
+  phoneNumber:string,
+  instagramId:string,
+  takId:string,
+  telegramId:string,
+  whatsappPhoneNumber:string,
   badgesIds: number[];
   firstName: string;
   university: string;
