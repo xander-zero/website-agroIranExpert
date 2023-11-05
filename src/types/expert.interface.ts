@@ -128,7 +128,7 @@ export interface ExpertFields {
   EXPERTS_BADGES: ExpertsBadges;
   EXPERTS_SORTS: ExpertsSorts;
   EXPERTS_SURVEY_OPTIONS: ExpertsSurveyOptions;
-  EXPERTS_SYMBOLS: ExpertsSymbols;
+  EXPERTS_SYMBOLS: ExpertsSymbols[];
   PROFESSIONS: Professions[];
   WORKPLACE_ORGANIZATIONS: WorkplaceOrganization;
   WORKPLACE_ORGANIZATIONS_POSITIONS: WorkplaceOrganizationPosition;
