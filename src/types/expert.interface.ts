@@ -10,6 +10,13 @@ export interface ExpertCountData {
   confirmedExpertsCountGroupByProvince: ExpertsCountGroupByProvince[];
 }
 
+export interface ListItems {
+  id: number,
+  categoryEN: string,
+  categoryFA: string,
+  name: string
+}
+
 export interface AcademicDegree {
   id: number;
   categoryEN: string;
@@ -100,6 +107,11 @@ export interface Professions {
   categoryEN: ProfessionsStatus;
   categoryFA: string;
   name: string;
+}
+
+export interface OptionsExperts {
+  key:string,
+  label:string,
 }
 
 export interface WorkplaceOrganization {

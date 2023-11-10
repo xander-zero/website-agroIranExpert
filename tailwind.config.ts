@@ -61,6 +61,10 @@ const config: Config = {
       center:true
     },
     extend:{
+      backdropBrightness: {
+        25: '.25',
+        175: '1.75',
+      },
       backgroundImage:{
         'hero-pattern':"url('/images/iran.svg')"
       }
