@@ -6,6 +6,8 @@ import { Button } from "../_components/button";
 import ProgressBar from "./components/progressBar/progressbar";
 import { EXPERTIES_LIST, PROFESSIONS_LIST } from "@/constants/expert";
 import ListItem from "./components/list-item/list-item";
+import ContentSlider from "./components/content-sliders/content-sliders";
+import SkillSlider from "./components/skill-slider/skill-slider";
 
 // experts
 async function getExpert(username: string): Promise<Expert> {
@@ -29,7 +31,7 @@ export default async function Expert({
 }) {
   const expert = await getExpert(username);
 
-  console.log("expert.professions", expert.professions);
+  const expertId = expert.uid;
 
   return (
     <div className="container mt-6">
@@ -157,6 +159,8 @@ export default async function Expert({
           />
         </div>
       </div>
+      <SkillSlider expertId={expertId} />
+      <ContentSlider expertId={expertId} />
     </div>
   );
 }

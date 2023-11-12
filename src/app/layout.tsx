@@ -1,4 +1,8 @@
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import { Figtree } from "next/font/google";
 import localFont from "next/font/local";
 

@@ -1,3 +1,4 @@
+import { AbsoluteString } from "next/dist/lib/metadata/types/metadata-types";
 
 export interface ExpertsCountGroupByProvince {
   count: number;
@@ -11,10 +12,10 @@ export interface ExpertCountData {
 }
 
 export interface ListItems {
-  id: number,
-  categoryEN: string,
-  categoryFA: string,
-  name: string
+  id: number;
+  categoryEN: string;
+  categoryFA: string;
+  name: string;
 }
 
 export interface AcademicDegree {
@@ -110,8 +111,8 @@ export interface Professions {
 }
 
 export interface OptionsExperts {
-  key:string,
-  label:string,
+  key: string;
+  label: string;
 }
 
 export interface WorkplaceOrganization {
@@ -200,7 +201,7 @@ type WorkplaceOrganizationType = {
   positionsIds: number[];
 };
 
-export type TExperyKey = '1' | '2' | '3' | '4' | '5' | '6' | '7' 
+export type TExperyKey = "1" | "2" | "3" | "4" | "5" | "6" | "7";
 
 export interface Expert {
   uid: string;
@@ -218,15 +219,15 @@ export interface Expert {
   symbol: SymbolType;
   aboutMe: null | string;
   symbolId: number;
-  symbolUrl:string,
+  symbolUrl: string;
   username: string;
   lastName: string;
   province: string;
-  phoneNumber:string,
-  instagramId:string,
-  takId:string,
-  telegramId:string,
-  whatsappPhoneNumber:string,
+  phoneNumber: string;
+  instagramId: string;
+  takId: string;
+  telegramId: string;
+  whatsappPhoneNumber: string;
   badgesIds: number[];
   firstName: string;
   university: string;
@@ -260,4 +261,36 @@ export interface Expert {
   workplaceOrganizationTypeId: number;
 }
 
-export type Experts = Expert[]
+export type TAG_EXPERT_CONTENT = "EDUCATIONAL_VIDEO";
+export type TYPE_EXPERT_CONTENT = "VIDEO" | "ARTICLE";
+export type STATUS_EXPERT_CONTENT = "CONFIRMED";
+
+export interface ExpertContent {
+  id: string;
+  tag: TAG_EXPERT_CONTENT;
+  type: TYPE_EXPERT_CONTENT;
+  title: string;
+  files: string[];
+  cover: null;
+  status: STATUS_EXPERT_CONTENT;
+  blogURL: null;
+  document: null;
+  expertId: string;
+  keywords: string[];
+  description: null;
+  categoriesIds: number[];
+  categories: string[];
+  createdAt: string;
+}
+
+export interface ExpertSkill {
+  id: string;
+  title: string;
+  files: string[];
+  status: STATUS_EXPERT_CONTENT;
+  expertId: string;
+  description: string;
+  createdAt: AbsoluteString;
+}
+
+export type Experts = Expert[];
